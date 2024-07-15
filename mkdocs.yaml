@@ -1,0 +1,40 @@
+site_name: Ben Ambrose
+
+docs_dir: src
+draft_docs: vault
+site_dir: docs
+
+theme:
+  name: mkdocs
+  custom_dir: theme/
+
+  favicon: 
+  avatar: assets/avatar.png
+  tagline: |
+    he/him /[bɛn æmbrəʊz](http://ipa-reader.xyz/?text=bɛn%20æmbrəʊz)/
+  footer: |
+      Compiled from markdown using [MkDocs](https://www.mkdocs.org/), hosted via [GitHub Pages](https://pages.github.com/). Theme by [Todd Parsons](https://toddparsons.co.uk).
+  page_source: 
+    link: https://github.com/singlemole/benambrose
+    icon: github
+  socials:
+    - label: Email
+      link: mailto:bambrose
+      icon: at
+    - label: GitHub
+      link: https://github.com/singlemole
+      icon: github
+    - label: Google Scholar
+      link: https://scholar.google.com/citations?user=q_Xfc3sAAAAJ&hl=en
+      icon: google-scholar
+
+hooks:
+  - theme/hooks/md_filter.py
+  - theme/hooks/layout.py
+
+markdown_extensions:
+  - toc
+  - attr_list
+  - def_list
+  - md_in_html
+  - nl2br
