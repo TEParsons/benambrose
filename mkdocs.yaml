@@ -1,4 +1,4 @@
-site_name: Ben Ambrose
+site_name: Benjamin Ambrose
 
 docs_dir: src
 draft_docs: vault
@@ -11,18 +11,18 @@ theme:
   favicon: 
   avatar: assets/avatar.png
   tagline: |
-    he/him /[bɛn æmbrəʊz](http://ipa-reader.xyz/?text=bɛn%20æmbrəʊz)/
+    he/him /[bɛnʤʌmɪn æmbrəʊz](http://ipa-reader.xyz/?text=bɛnʤʌmɪn%20æmbrəʊz)/
   footer: |
       Compiled from markdown using [MkDocs](https://www.mkdocs.org/), hosted via [GitHub Pages](https://pages.github.com/). Theme by [Todd Parsons](https://toddparsons.co.uk).
   page_source: 
-    link: https://github.com/singlemole/benambrose
+    link: https://benjaminambrose.github.io/benambrose/
     icon: github
   socials:
     - label: Email
-      link: mailto:bambrose
+      link: mailto:b.ambrose@lms.mrc.ac.uk
       icon: at
     - label: GitHub
-      link: https://github.com/singlemole
+      link: https://github.com/BenjaminAmbrose
       icon: github
     - label: Google Scholar
       link: https://scholar.google.com/citations?user=q_Xfc3sAAAAJ&hl=en
