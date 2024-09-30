@@ -5,11 +5,16 @@ draft_docs: vault
 site_dir: docs
 
 theme:
-  name: mkdocs
-  custom_dir: theme/
+  name: landing
 
-  favicon: 
   avatar: assets/avatar.png
+  background: |
+    linear-gradient(
+        45deg, 
+        color-mix(in srgb, var(--crust) 100%, transparent), 
+        color-mix(in srgb, var(--base) 80%, transparent)
+    ), fixed center/cover url(assets/starmap.png)
+
   tagline: |
     he/him /[bɛnʤʌmɪn æmbrəʊz](http://ipa-reader.xyz/?text=bɛnʤʌmɪn%20æmbrəʊz)/
   footer: |
@@ -23,14 +28,59 @@ theme:
       icon: at
     - label: GitHub
       link: https://github.com/BenjaminAmbrose
-      icon: github
+      icon: [brands, github]
     - label: Google Scholar
       link: https://scholar.google.com/citations?user=q_Xfc3sAAAAJ&hl=en
-      icon: google-scholar
+      icon: [brands, google-scholar]
+  
+  # style options
+  header_layout:
+    - avatar
+    - socials
+    - title
+    - tagline    
+  content_box_opacity: 0
+  avatar_size: 8rem
+  round_avatar: True
+  
+  # theme colours
+  colors:
+    # colours
+    primary: "#dd7878"
+    secondary: "#7287fd"
+    tertiary: "#dd7878"
+    # shades
+    base: "#24273a"
+    mantle: "#1e2030"
+    crust: "#181926"
+    overlay: "#9B9B9E"
+    # text
+    text: "#c6d0f5"
+    hltext: "#24273a"
+  
+  # dark mode colors
+  colors_dark:
+    # colours
+    primary: "#dd7878"
+    secondary: "#7287fd"
+    tertiary: "#dd7878"
+    # shades
+    base: "#24273a"
+    mantle: "#1e2030"
+    crust: "#181926"
+    overlay: "#9B9B9E"
+    # text
+    text: "#c6d0f5"
+    hltext: "#24273a"
+  
+  # fonts
+  fonts:
+    body: Maven Pro
+    heading: Oswald
 
 hooks:
-  - theme/hooks/md_filter.py
-  - theme/hooks/layout.py
+  - hooks/md_filter.py
+  - hooks/layout.py
 
 markdown_extensions:
   - toc
