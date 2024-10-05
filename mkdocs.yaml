@@ -8,12 +8,7 @@ theme:
   name: landing
 
   avatar: assets/avatar.png
-  background: |
-    linear-gradient(
-        45deg, 
-        color-mix(in srgb, var(--crust) 100%, transparent), 
-        color-mix(in srgb, var(--base) 80%, transparent)
-    ), fixed center/cover url(assets/starmap.png)
+  background: fixed center/cover url(assets/starmap.png)
 
   tagline: |
     he/him /[bɛnʤʌmɪn æmbrəʊz](http://ipa-reader.xyz/?text=bɛnʤʌmɪn%20æmbrəʊz)/
@@ -42,6 +37,9 @@ theme:
   content_box_opacity: 0
   avatar_size: 8rem
   round_avatar: True
+  background_gradient_colors: 
+    - color-mix(in srgb, var(--crust) 100%, transparent)
+    - color-mix(in srgb, var(--base) 80%, transparent)
   
   # theme colours
   colors:
@@ -54,9 +52,11 @@ theme:
     mantle: "#1e2030"
     crust: "#181926"
     overlay: "#9B9B9E"
+    footer: "#14172a"
     # text
     text: "#c6d0f5"
     hltext: "#24273a"
+    footer_text: var(--text)
   
   # dark mode colors
   colors_dark:
@@ -69,9 +69,11 @@ theme:
     mantle: "#1e2030"
     crust: "#181926"
     overlay: "#9B9B9E"
+    footer: "#14172a"
     # text
     text: "#c6d0f5"
     hltext: "#24273a"
+    footer_text: var(--text)
   
   # fonts
   fonts:
