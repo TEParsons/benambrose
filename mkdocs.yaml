@@ -15,7 +15,7 @@ theme:
   footer: |
       Compiled from markdown using [MkDocs](https://www.mkdocs.org/), hosted via [GitHub Pages](https://pages.github.com/). Theme by [Todd Parsons](https://toddparsons.co.uk).
   page_source: 
-    link: https://benjaminambrose.github.io/benambrose/
+    link: https://github.com/benjaminambrose/benambrose/
   socials:
     - label: Email
       link: mailto:b.ambrose@lms.mrc.ac.uk
