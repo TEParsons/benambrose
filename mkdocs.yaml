@@ -41,44 +41,35 @@ theme:
     - color-mix(in srgb, var(--crust) 100%, transparent)
     - color-mix(in srgb, var(--base) 80%, transparent)
   
-  # theme colours
-  colors:
-    # colours
-    primary: "#dd7878"
-    secondary: "#7287fd"
-    tertiary: "#dd7878"
-    # shades
-    base: "#24273a"
-    mantle: "#1e2030"
-    crust: "#181926"
-    overlay: "#9B9B9E"
-    footer: "#14172a"
-    # text
-    text: "#c6d0f5"
-    hltext: "#24273a"
-    footer_text: var(--text)
+  # colours
+  primary_color: "#dd7878"
+  secondary_color: "#7287fd"
+  tertiary_color: "#dd7878"
+  # shades
+  base_color: "#24273a"
+  mantle_color: "#1e2030"
+  crust_color: "#181926"
+  overlay_color: "#9B9B9E"
+  # text
+  text_color: "#c6d0f5"
+  hltext_color: "#24273a"
   
-  # dark mode colors
-  colors_dark:
-    # colours
-    primary: "#dd7878"
-    secondary: "#7287fd"
-    tertiary: "#dd7878"
-    # shades
-    base: "#24273a"
-    mantle: "#1e2030"
-    crust: "#181926"
-    overlay: "#9B9B9E"
-    footer: "#14172a"
-    # text
-    text: "#c6d0f5"
-    hltext: "#24273a"
-    footer_text: var(--text)
+  # colours (dark)
+  primary_color_dark: "#dd7878"
+  secondary_color_dark: "#7287fd"
+  tertiary_color_dark: "#dd7878"
+  # shades (dark)
+  base_color_dark: "#24273a"
+  mantle_color_dark: "#1e2030"
+  crust_color_dark: "#181926"
+  overlay_color_dark: "#9B9B9E"
+  # text (dark)
+  text_color_dark: "#c6d0f5"
+  hltext_color_dark: "#24273a"
   
-  # fonts
-  fonts:
-    body: Maven Pro
-    heading: Oswald
+  #fonts
+  body_font: Maven Pro
+  heading_font: Oswald
 
 hooks:
   - hooks/md_filter.py
